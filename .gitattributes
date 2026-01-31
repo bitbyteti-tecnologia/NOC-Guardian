@@ -1,0 +1,7 @@
+# Padroniza texto como LF no repo (bom para Linux/Docker)
+* text=auto eol=lf
+
+# Em Windows, scripts de Windows com CRLF:
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
