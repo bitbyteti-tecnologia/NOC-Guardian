@@ -1,1 +1,1 @@
-# NOC Guardian — Pro+ (Full Stack)
+# NOC Guardian — NOC de Observabilidade de Infraestrutura de REde (Full Stack)
