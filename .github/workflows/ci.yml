@@ -1,0 +1,22 @@
+name: ci
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Node info (exemplo inofensivo)
+        run: |
+          node -v || true
+          npm -v || true
+      - name: Python info (exemplo inofensivo)
+        run: |
+          python --version || true
+          pip --version || true
+      - name: OK
+        run: echo "CI ok"
