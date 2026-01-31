@@ -1,0 +1,151 @@
+###############################################################################
+# NOC Guardian - .gitignore completo
+# Ideal para projetos FullStack: FastAPI + React/Vite + Docker + Nginx
+###############################################################################
+
+##############################
+# SISTEMA / GERAIS
+##############################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Ambiente Linux
+*.pid
+*.seed
+*.lock
+
+##############################
+# VARIÁVEIS DE AMBIENTE / SENSÍVEIS
+##############################
+.env
+.env.*
+!*.example
+
+certs/
+secrets/
+keys/
+*.pem
+*.key
+*.crt
+
+##############################
+# PYTHON / FASTAPI BACKEND
+##############################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+*.sqlite3
+*.db
+
+# Virtualenv
+venv/
+.venv/
+ENV/
+
+# Ferramentas
+coverage/
+.pytest_cache/
+.mypy_cache/
+ruff_cache/
+
+##############################
+# FRONTEND (React + Vite)
+##############################
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Arquivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+##############################
+# DOCKER
+##############################
+docker-compose.override.yml
+docker-compose.local.yml
+docker-data/
+*.log
+logs/
+*.pid
+
+# Imagens e builds
+*.tar
+*.tar.gz
+*.tgz
+
+##############################
+# NGINX
+##############################
+nginx/conf.d/*.bak
+nginx/logs/
+nginx/cache/
+
+##############################
+# GITHUB ACTIONS
+##############################
+# Artifacts
+*.zip
+*.7z
+*.gz
+
+# Workflows geram apenas YAML (mantemos)
+!/.github/workflows/*.yml
+
+##############################
+# WINDOWS / IDEs
+##############################
+# Windows
+*.exe
+*.dll
+
+# VSCode
+.vscode/
+.history/
+
+# JetBrains
+.idea/
+*.iml
+
+##############################
+# AGENTES NOC
+##############################
+agent_pack/
+agent_build/
+*.tar.gz
+*_agent_*.tar.gz
+noc-agent-linux
+noc-agent-linux.py
+noc-agent-linux.service
+
+##############################
+# LOGS / RELATÓRIOS
+##############################
+*.log
+*.out
+*.err
+*.csv
+*.xlsx
+*.pdf
+
+##############################
+# BACKUPS / ZIP
+##############################
+backup/
+*.zip
+*.rar
+*.7z
+*.bak
